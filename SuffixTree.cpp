@@ -107,9 +107,7 @@ void SuffixTree::add_to_tree(int pos) {
                 active_point.active_node = ptr;
                 active_point.active_edge += (*(ptr->end) - ptr->start + 1);
                 active_point.active_length -= (*(ptr->end) - ptr->start + 1);
-//                active_edge = -1;
-//                active_point.active_length = 0;
-                continue;
+               continue;
             }
             
             // check if the next character matches the current one
